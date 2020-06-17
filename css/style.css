@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    color: #363636
 }
 
 .header {
@@ -117,4 +122,199 @@ body {
     outline: none;
     background-color: #5671F6;
     padding: 0 50px;
+}
+
+.container {
+    max-width: 1130px;
+    margin: 0 auto;
+}
+.film {
+    padding-bottom: 80px;
+    margin: 80px 0;
+    border-bottom: 1px solid #D4D4D4;
+}
+
+.film-wrapper {
+    display: flex;
+}
+
+.film-trailer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.poster {
+    border-radius: 5px 5px 0 0;
+    width: 358px;
+}
+
+.trailer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #D4D4D4;
+    border-radius: 0 0 5px 5px;
+    padding: 25px 0;
+    cursor: pointer;
+}
+
+.trailer-button-icon {
+    margin-right: 14px;
+}
+
+.trailer-button-text {
+    color: #5671F6;
+}
+.film-title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #363636;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.film-subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    color: #A5A5A5;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.film-description {
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 50px;
+    max-width: 514px;
+}
+
+.film-about {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.left-side {
+    margin-right: 40px;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #363636;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
+.about-text-bold {
+    width: 100px;
+    display: inline-block;
+    font-weight: bold; 
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating-counter {
+    border: 1px solid #5671F6;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    margin-right: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #5671F6;
+}
+
+.rating-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.rating-text {
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 19px;
+}
+.rating-text:last-child {
+    margin-bottom: 0;
+}
+
+.rating-text-bold {
+    font-weight: bold;
+}
+
+.cast-tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.cast-title {
+    margin: 0 30px 0 0;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #A5A5A5;
+    cursor: pointer;
+}
+.cast-title:last-child {
+    margin-right: 0;
+}
+
+.cast-title.active {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #363636;
+}
+
+.tabs-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    flex-basis: 25%;
+}
+.card-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.card-text {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.card-name {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #5671F6;
+}
+.card-en-name {
+    margin-top: 0;
+    color: #A5A5A5;
 }
